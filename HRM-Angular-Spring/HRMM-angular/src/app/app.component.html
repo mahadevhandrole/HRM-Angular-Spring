@@ -1,0 +1,84 @@
+<div class="page-wrapper">
+
+    <!-- MENU SIDEBAR-->
+    <aside class="menu-sidebar d-none d-lg-block">
+        <div class="logo">
+            <a href="home.html">
+                <img src="assets/images/logo.png" alt="HRM" class="img-responsive">
+            </a>
+        </div>
+        <div class="menu-sidebar-content js-scrollbar1">
+            <nav class="navbar-sidebar">             
+               <a routerLink ="/app-student-dasboard" routerLinkActive="active-link">STUDENTS
+
+                </a>
+                <ul class="list-unstyled navbar-list">
+
+                    <li>
+                        <a routerLink="/app-add-student/0" routerLinkActive="active-link">NEW
+
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="/app-students-contact/1" routerLinkActive="active-link">CONTACT</a>
+                    </li>
+                    <li>
+                        <a routerLink="/app-students-lead/2" routerLinkActive="active-link">LEAD</a>
+                    </li>
+                    <li>
+                        <a routerLink="/app-students-account/3" routerLinkActive="active-link">ACCOUNT</a>
+                    </li>
+                    <li>
+                        <a routerLink="/app-students-cancelled/4" routerLinkActive="active-link">CANCELLED</a>
+                    </li>
+                </ul>
+
+                <a routerLink="/app-company-dasboard" routerLinkActive="active-link">COMPANY
+
+                </a>
+                <ul class="list-unstyled navbar-list">
+                    <li>
+                        <a routerLink="/app-add-client/0" routerLinkActive="active-link">NEW</a>
+                    </li>
+                    <li>
+                        <a routerLink="/app-client-contact/1" routerLinkActive="active-link">CONTACT</a>
+                    </li>
+                    <li>
+                        <a routerLink="/app-client-lead/2" routerLinkActive="active-link">LEAD</a>
+                    </li>
+                    <li>
+                        <a routerLink="/app-client-account/3" routerLinkActive="active-link">ACCOUNT</a>
+                    </li>
+                    <li>
+                        <a routerLink="/app-client-cancelled/4" routerLinkActive="active-link">CANCELLED</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </aside>
+
+    <!-- END MENU SIDEBAR-->
+
+    <!-- PAGE CONTAINER-->
+    <div class="page-container">
+        <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+        <div class="section-content section-content-p30">
+            <div class="container-fluid">
+                <div class="header-wrap">
+                           HUMAN RESOURCE MANAGEMENT
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+
+        <!--main content-->
+        <router-outlet></router-outlet>
+        <!--end main content-->
+
+    </div>
+</div>
+
+

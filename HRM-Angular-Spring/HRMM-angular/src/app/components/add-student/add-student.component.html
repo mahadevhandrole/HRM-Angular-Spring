@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+        <div class="section-content section-content-p30">
+            <div class="container-fluid">
+                <div class="header-wrap">
+                           HUMAN RESOURCE MANAGEMENT
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+    <div class="main-content">
+        <div class="section-content section-content-p30">
+            <div class="container-fluid">
+
+
+                <form [formGroup]="studentFormGroup" (ngSubmit)="onSubmit()">
+
+                    <!--student form group-->
+                    <div formGroupName="student" class="form-area">
+                        <h3>Student Form</h3>
+                        <div class="row">
+                            <div class="col-md-2"><label>Date</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="date" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Name</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="name" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Email</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="email" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Contact_No</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="contact_no1" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Secondary Contact_No</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="contact_no2" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Gender</label></div>
+                            <div class="col-md-6">
+                                <label class="radio-inline">
+                                        <input formControlName="gender" type="radio" value="male" name="gender">
+                                        Male
+                                </label>
+                          
+                                <label class="radio-inline">
+                                    <input formControlName="gender" type="radio" value="female" name="gender">
+                                    Female
+                                </label>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Qualification</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select formControlName="qualification">
+                                        <option>BE</option>
+                                        <option>M-Tech</option>
+                                        <option>MCA</option>
+                                        <option>BCA</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Stream</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select formControlName="stream">
+                                        <option>CS</option>
+                                        <option>IT</option>
+                                        <option>EC</option>
+                                        <option>TC</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Percentage</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="percentage" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Passout Year</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select formControlName="passoutyear">
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Profile</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select formControlName="profile">
+                                        <option>Java Developer</option>
+                                        <option>Web Developer</option>
+                                        <option>Android Developer</option>
+                                        <option>Full Stack Developer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Experience</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select formControlName="experience">
+                                        <option>Fresher</option>
+                                        <option>6 months - 1 years</option>
+                                        <option>2 Years - 3 Years</option>
+                                        <option> 5 Years - 10 Years</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label>Reference</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="reference" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
+
+                    </div>
+                </form>
+
+                <hr>
+
+                <h3>View Student Details</h3>
+                  
+                    <app-student-search></app-student-search>
+                 
+                <table class="table table-bordered table-stripped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Passout Year</th>
+                            <th>Qualification</th>
+                            <th>Branch</th>
+                            <th>Profile</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let temp of getstudents">
+                            <td>{{temp.id}}</td>
+                            <td>{{temp.name}}</td>
+                            <td>{{temp.passoutyear}}</td>
+                            <td>{{temp.qualification}}</td>
+                            <td>{{temp.stream}}</td>
+                            <td>{{temp.profile}}</td>
+                            <td>
+
+                                <a routerLink="/app-student-view/{{temp.id}}" routerLinkActive="active-link">VIEW</a> |
+
+                                <a routerLink="/app-student-update/{{temp.id}}" routerLinkActive="active-link">UPDATE</a> |
+
+                                <a routerLink="/app-student-call/{{temp.id}}/{{temp.status}}"routerLinkActive="active-link">CALL</a> |
+                                
+                                <a routerLink="/app-student-email/{{temp.id}}" routerLinkActive="active-link">EMAIL</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <router-outlet></router-outlet>
+                <!-- begin footer-->
+                <div class="footer-pagination">
+                    <div class="row">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9" style="padding-left: 30%;">
+                                    <ngb-pagination [(page)]="thePageNumber" 
+                                                    [pageSize]="thePageSize"
+                                                    [collectionSize]="theTotalElements" 
+                                                    [maxSize]="5"
+                                                    [boundaryLinks]="true"
+                                                    (pageChange)="listStudents()">
+
+                                    </ngb-pagination>
+                                </div>
+                                <div class="col-md-3 mt-2" style="text-align: right;">
+                                    <span class="mr-2">Page Size</span>
+
+                                    <select (change)="updatePageSize($event.target.value)">
+                                        <option selected="true">5</option>
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option>50</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end footer-->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            
+
+           
+         <div *ngFor="let tempclientview of clientview">
+            <h3>Client Information</h3>
+            <div class="row">
+                <div class="col-md-2"><label>ID </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempclientview.id}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Date </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempclientview.date | date:'dd/MM/yyyy'}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Name </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempclientview.name}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Address</label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempclientview.address}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Bussiness Type </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempclientview.b_type}}
+                    </div>
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-md-2"><label>Status</label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempclientview.status}}
+                    </div>
+                </div>
+            </div>
+           <!--  <div class="row">
+                <div class="col-md-2"><label>Gender </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempstudentsview.gender}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Qualifiaction</label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempstudentsview.qualification}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Stream </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempstudentsview.stream}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Percentage </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempstudentsview.percentage}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Passout Year </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempstudentsview.passoutyear}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Profile </label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempstudentsview.profile}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Experience</label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempstudentsview.experience}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><label>Reference</label></div>
+                <div class="col-md-4">
+                    <div class="input-space">
+                        {{tempstudentsview.reference}}
+                    </div>
+                </div>
+            </div>-->
+          </div>
+            <a routerLink="/app-add-client" routerLinkActive="active-link">Back to client list</a>
+        
+        </div>
+    </div>
+</div>

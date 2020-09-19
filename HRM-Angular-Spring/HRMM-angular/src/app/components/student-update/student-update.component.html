@@ -1,0 +1,209 @@
+
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+        <div class="section-content section-content-p30">
+            <div class="container-fluid">
+                <div class="header-wrap">
+                    HUMAN RESOURCE MANAGEMENT
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+    <div class="main-content">
+        <div class="section-content section-content-p30">
+            <div class="container-fluid">
+                
+                <form *ngIf="studentInfos1" (ngSubmit)="onSubmit()">
+
+                    <!--student form group-->
+                  
+                    <h3>Student Update Form</h3>
+                      
+                        <div class="row">
+                            <div class="col-md-2"><label>ID</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                  <!--  <input  type="id" class="form-control" id="id"
+                                    [(ngModel)]="studentInfos.id" name="id" #id="ngModel"[ngModelOptions]="{standalone: true}">-->
+                                    <h4>{{ studentInfos1.id=data[0] }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="row">
+                            <div class="col-md-2"><label>Date</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                   <input  type="date" class="form-control" id="date"
+                                        [(ngModel)]="studentInfos1.date" name="date"/>{{studentInfos1.date}}
+                                        
+                                </div>
+                            </div>
+                        </div>
+                 
+                   
+                        <div class="row">
+                            <div class="col-md-2"><label>Name</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input type="text" class="form-control" id="name"
+                                    [(ngModel)]="studentInfos1.name" name="name"/>{{studentInfos1.name}}
+                                </div>
+                            </div>
+                        </div>
+                    
+                  
+                        <div class="row">
+                            <div class="col-md-2"><label>Email</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input type="text" class="form-control" id="email"
+                                    [(ngModel)]="studentInfos1.email" name="email"/>{{studentInfos1.email}}
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-2"><label>Contact_No</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input type="text" class="form-control" id="contact_no1"
+                                    [(ngModel)]="studentInfos1.contact_no1" name="contact_no1"/>{{studentInfos1.contact_no1}}
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="row">
+                            <div class="col-md-2"><label>Secondary Contact_No</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input type="text" class="form-control" id="contact_no2"
+                                    [(ngModel)]="studentInfos1.contact_no2" name="contact_no2"/>{{studentInfos1.contact_no2}}
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <div class="row">
+                            <div class="col-md-2"><label>Gender</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select class="form-control" id="gender" [(ngModel)]="studentInfos1.gender"
+                                        name="gender">{{studentInfos1.gender}}
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                 
+                        <div class="row">
+                            <div class="col-md-2"><label>Qualification</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select class="form-control" id="qualification"
+                                    [(ngModel)]="studentInfos1.qualification" name="qualification">{{studentInfos1.qualification}}
+                                        <option>BE</option>
+                                        <option>M-Tech</option>
+                                        <option>MCA</option>
+                                        <option>BCA</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <div class="row">
+                            <div class="col-md-2"><label>Stream</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select class="form-control" id="stream" [(ngModel)]="studentInfos1.stream"
+                                        name="stream">{{studentInfos1.stream}}
+                                        <option>CS</option>
+                                        <option>IT</option>
+                                        <option>EC</option>
+                                        <option>TC</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <div class="row">
+                            <div class="col-md-2"><label>Percentage</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input type="text" class="form-control" id="percentage"
+                                    [(ngModel)]="studentInfos1.percentage" name="percentage">{{studentInfos1.percentage}}
+                                </div>
+                            </div>
+                        </div>
+                 
+                        <div class="row">
+                            <div class="col-md-2"><label>Passout Year</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select class="form-control" id="passoutyear"
+                                    [(ngModel)]="studentInfos1.passoutyear" name="passoutyear">{{studentInfos1.passoutyear}}
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="row">
+                            <div class="col-md-2"><label>Profile</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select class="form-control" id="profile" [(ngModel)]="studentInfos1.profile"
+                                        name="profile">{{studentInfos1.profile}}
+                                        <option>Java Developer</option>
+                                        <option>Web Developer</option>
+                                        <option>Android Developer</option>
+                                        <option>Full Stack Developer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="row">
+                            <div class="col-md-2"><label>Experience</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select class="form-control" id="experience"
+                                    [(ngModel)]="studentInfos1.experience" name="experience">{{studentInfos1.experience}}
+                                        <option>Fresher</option>
+                                        <option>6 months - 1 years</option>
+                                        <option>2 Years - 3 Years</option>
+                                        <option> 5 Years - 10 Years</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                 
+                        <div class="row">
+                            <div class="col-md-2"><label>Reference</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input type="text" class="form-control" id="reference"
+                                    [(ngModel)]="studentInfos1.reference" name="reference"/>{{studentInfos1.reference}}
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="text-center">
+
+                            <button type="submit" class="btn btn-info">Update</button>
+
+                        </div>
+                  
+            
+
+                </form>
+               
+                <a routerLink="/app-add-student" routerLinkActive="active-link">Back to student list</a>
+            </div>
+        </div>
+    </div>

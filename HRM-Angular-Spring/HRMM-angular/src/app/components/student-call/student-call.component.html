@@ -1,0 +1,113 @@
+<!-- HEADER DESKTOP-->
+<header class="header-desktop">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="header-wrap">
+                HUMAN RESOURCE MANAGEMENT
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER DESKTOP-->
+
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+           <div>
+                <h3>History</h3>
+            </div>
+             <div>
+            <table border="2">
+                <thead class="thead-dark">
+                    <tr>
+                        <td>Date</td>
+                        <td>Message</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let temp of callDetails">
+
+                        <td>{{temp.duplicateDate | date:'dd/MM/yyyy'}}</td>
+                        <td>{{temp.message}}</td>
+
+
+                    </tr>
+
+                </tbody>
+            </table>
+          
+
+            </div>
+            <div>
+                <h3>Last Call</h3>
+            </div>
+           <div>
+                <p></p>
+            </div>
+            <div class="col-md-9" style="padding-left: 40%;">
+                <form [formGroup]="callFormGroup" (ngSubmit)="onSubmit()">
+                    <!--call form group-->
+                    <div formGroupName="call" class="form-area">
+                        <h3>Current Call Form</h3>
+                        <div class="row">
+                            <div class="col-md-4"><label>Date</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="duplicateDate" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><label>Message</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="message" type="textarea">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-4"><label>Next call Date</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <input formControlName="nextDate" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><label>Status</label></div>
+                            <div class="col-md-6">
+                                <div class="input-space">
+                                    <select formControlName="status">
+                                        <option selected="true" value="1">CONTECTED</option>
+                                        <option value="2">LEAD</option>
+                                        <option value="3">ACCOUNT</option>
+                                        <option value="4">CANCELLED</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
